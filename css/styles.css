@@ -1,0 +1,176 @@
+h1, h2, h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+p {
+  color: #8f8f8f;
+  font-family: 'Ubuntu';
+}
+
+/* heading */
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* container */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* section */
+.colored-section {
+  background-color: #ff4c68;
+  color: white;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* navigation bar*/
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Montserrat-light';
+  color: white;
+}
+
+/* title */
+#title {
+  text-align: left;
+}
+
+/* these is called combining of selectors to target particular selector rather than touching any another selectors by giving particular selector */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* title image*/
+.title-image {
+  width: 20%;
+  transform: rotate(24deg);
+  /* these transform property is used to use rotate function to rotate image */
+  position: absolute;
+  right: 23%;
+}
+
+/* Download button  */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* features */
+#features {
+  position: relative;
+  z-index: 1;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* testimonial */
+#testimonials {
+  background-color: #ef8172;
+  color: white;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 50px;
+  margin: 5% 3%;
+}
+
+/* press */
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* pricing */
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* card  */
+.pricing {
+  padding-top: 5%;
+}
+
+/* call to Action */
+
+/* footer */
+.fa-icon {
+  padding: 0 10px;
+}
+
+.copyright {
+  padding-top: 20px;
+}
+
+/* making website responsive on any device use @media tag */
+@media(max-width:996px) {
+  #title {
+    text-align: center;
+  }
+
+  img.title-image {
+    position: static;
+    transform: rotate(0);
+    width: 50%;
+    /* here i have to use "img"tag with class=".title-image"then it work . so if given input doesn't work then inspect source from web and try different ways */
+  }
+}
